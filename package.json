@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "start": "yarn workspace demo develop"
+  },
+  "private": true,
+  "workspaces": [
+    "gatsby-theme-adwordpress-mdx",
+    "demo"
+  ],
+  "devDependencies": {
+    "env-cmd": "^10.0.1",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "husky": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --no-verify --staged  "
+    }
+  }
+}
