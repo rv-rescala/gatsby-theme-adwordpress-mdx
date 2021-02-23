@@ -82,7 +82,10 @@ export const WpPostTemplate = ({
               mb: 3
             }}
           >
-            <h1>こんにちは</h1>
+            <h1>こんにちは1</h1>
+            <h1>こんにちは2</h1>
+            <h1>{site.siteMetadata.config.adSence.dataAdClient}</h1>
+            <h1>{title}</h1>
             <Styled.h1>{title}</Styled.h1>
             {formatDate(date)}{' '}
             {author && (
@@ -165,7 +168,31 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
+        keywords
         siteURL
+        siteImage
+        twitterUsername
+        author {
+          name
+        }
+        config {
+          headerHeight
+          sideBarWidth
+          logo
+          navButtonTheme {
+            showButtonTheme
+            text
+            colorsModes
+          }
+          colorModes {
+            default
+          }
+          adSence {
+            dataAdClient
+            dataAdSlot
+          }
+        }
       }
     }
     mdxWpPosts(id: { eq: $id }) {

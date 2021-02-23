@@ -27,6 +27,10 @@ export const useSiteMetadata = () => {
               colorModes {
                 default
               }
+              adSence {
+                dataAdClient
+                dataAdSlot
+              }
             }
           }
         }

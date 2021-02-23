@@ -2,7 +2,7 @@ const path = require('path')
 // https://github.com/staticfuse/staticfuse/blob/master/packages/gatsby-theme-publisher/gatsby-config.js
 
 module.exports = options => {
-  const { navButtonTheme, colorModes } = options
+  const { navButtonTheme, colorModes, adSence } = options
   const config = {
     siteMetadata: {
       title: '',
@@ -30,6 +30,11 @@ module.exports = options => {
         },
         colorModes: {
           default: colorModes && colorModes.default ? colorModes.default : ''
+        },
+        adSence: {
+          dataAdClient:
+            adSence && adSence.dataAdClient ? adSence.dataAdClient : '',
+          dataAdSlot: adSence && adSence.dataAdSlot ? adSence.dataAdSlot : ''
         }
       }
     },

@@ -22,7 +22,7 @@ export const WpPage = ({ data }) => {
           description={excerpt}
           isBlogPostPage
         />
-        <h1>こんにちは</h1>
+        <h1>こんにちは2</h1>
         <Styled.h1>{title}</Styled.h1>
         <Styled.div
           sx={css({

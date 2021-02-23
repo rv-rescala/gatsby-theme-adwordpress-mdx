@@ -91,6 +91,10 @@ module.exports = {
         /* colorModes: {
           default: 'gray'
         }, */
+        adSence: {
+          dataAdClient: 'ca-pub-00000000000000',
+          dataAdSlot: '00000000000000'
+        },
         logo: `src/images/logo.svg` // This path is relative to the root of the site.
       }
     }
