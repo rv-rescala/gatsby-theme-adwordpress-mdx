@@ -54,6 +54,10 @@ export const Seo = ({
         <meta name="twitter:title" content={seoTitle} />
         <meta name="twitter:description" content={seoDescription} />
         <meta name="twitter:image" content={seoUrlImage} />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
       </Helmet>
       <SchemaOrg
         isBlogPost={isBlogPostPage}

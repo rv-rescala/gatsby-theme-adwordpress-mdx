@@ -11,6 +11,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { formatDate, colorRange, getCurrentColors } from '../helpers'
 import { Content } from '../components/Content'
 import { ButtonIcon } from '../components/ButtonIcon'
+import { AdCard } from '../components/AdSence'
 
 export const WpPostTemplate = ({
   content,
@@ -83,8 +84,10 @@ export const WpPostTemplate = ({
             }}
           >
             <h1>こんにちは1</h1>
-            <h1>こんにちは2</h1>
-            <h1>{site.siteMetadata.config.adSence.dataAdClient}</h1>
+            <AdCard
+              dataAdClient={site.siteMetadata.config.adSence.dataAdClient}
+              dataAdSlot={site.siteMetadata.config.adSence.dataAdSlot}
+            />
             <h1>{title}</h1>
             <Styled.h1>{title}</Styled.h1>
             {formatDate(date)}{' '}
