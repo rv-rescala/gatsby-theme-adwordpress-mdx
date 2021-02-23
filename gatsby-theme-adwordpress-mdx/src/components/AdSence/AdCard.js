@@ -3,8 +3,8 @@ import React, { useEffect } from 'react'
 export const AdCard = ({ dataAdClient, dataAdSlot }) => {
   useEffect(() => {
     if (window.adsbygoogle && process.env.NODE_ENV !== 'development') {
-      window.adsbygoogle.push({})
       console.log('ad on')
+      window.adsbygoogle.push({})
     } else {
       console.log('ad off')
     }
