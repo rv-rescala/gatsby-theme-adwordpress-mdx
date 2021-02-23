@@ -84,10 +84,7 @@ export const WpPostTemplate = ({
             }}
           >
             <h1>こんにちは1</h1>
-            <AdCard
-              dataAdClient={site.siteMetadata.config.adSence.dataAdClient}
-              dataAdSlot={site.siteMetadata.config.adSence.dataAdSlot}
-            />
+            <AdCard />
             <h1>{title}</h1>
             <Styled.h1>{title}</Styled.h1>
             {formatDate(date)}{' '}
