@@ -83,7 +83,6 @@ export const WpPostTemplate = ({
               mb: 3
             }}
           >
-            <h1>こんにちは1</h1>
             <AdCard />
             <h1>{title}</h1>
             <Styled.h1>{title}</Styled.h1>

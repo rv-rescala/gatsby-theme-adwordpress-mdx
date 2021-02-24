@@ -17,7 +17,6 @@ export const AdCard = props => {
 
   return (
     <>
-      <h1>こんばんは</h1>
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
