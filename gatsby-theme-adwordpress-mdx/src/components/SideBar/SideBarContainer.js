@@ -7,23 +7,20 @@ import { useAllMdxWpPages, useSiteMetadata } from '../../Hooks'
 export const SideBarContainer = () => {
   const allMdxWpPages = useAllMdxWpPages()
   const { config } = useSiteMetadata()
-  const links = allMdxWpPages.edges.map(({ node: page }) => {
-    if (page.type === 'WP') {
-      const { wpData } = page
-      return {
-        slug: wpData.slug,
-        icon: null,
-        title: page.title
-      }
-    } else {
+  const links = allMdxWpPages.edges
+    .filter(({ node: page }) => {
+      return page.mdxData != null
+    })
+    .map(({ node: page }) => {
       const { mdxData } = page
       return {
         slug: mdxData.fields.slug,
         icon: mdxData.frontmatter.icon,
-        title: page.title
+        title: page.title,
+        headOrder: page.mdxData.frontmatter.headOrder
       }
-    }
-  })
+    })
+    .sort((x, y) => x.headOrder - y.headOrder)
   return (
     <Styled.div
       sx={{

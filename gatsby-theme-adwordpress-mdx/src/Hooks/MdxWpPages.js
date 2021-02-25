@@ -10,6 +10,11 @@ export const useAllMdxWpPages = () => {
               type
               id
               title
+              mdxData {
+                frontmatter {
+                  headOrder
+                }
+              }
               wpData {
                 slug
                 title

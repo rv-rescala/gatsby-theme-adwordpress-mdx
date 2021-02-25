@@ -90,6 +90,7 @@ function CreateWpDataSchema(actions) {
         images: [File]
         featureOrder: Int
         featureImage: File
+        headOrder: Int
         aboutImage: File
         date(
         difference: String
