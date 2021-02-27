@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/jlengstorf/gatsby-theme-wordpress-mdx.git"
   },
-  "version": "1.0.16",
+  "version": "1.0.17",
   "main": "gatsby-config.js",
   "license": "MIT",
   "peerDependencies": {

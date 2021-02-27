@@ -84,7 +84,6 @@ export const WpPostTemplate = ({
             }}
           >
             <AdCard />
-            <h1>{title}</h1>
             <Styled.h1>{title}</Styled.h1>
             {formatDate(date)}{' '}
             {author && (
